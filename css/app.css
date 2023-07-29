@@ -1,22 +1,56 @@
+/* zerar padrões do navegador*/
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
+.z1{
+    z-index: 1;
+}
+.z2{
+    z-index: 2;
+}
+.z3{
+    z-index: 3;
+}
+
+/*configuração do background*/
 .bg{
     position: absolute;
     width: 100vw;
     height: 100vh;
     background: url('../img/bg.jpg');
-    top: 0;
+    top:0;
     left: 0;
 }
 .sombra{
-    position: absolute;
+    position:absolute;
     width: 100vw;
     height: 50vh;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.59) 35% rgba(255,255,255,0) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.59) 35%, rgba(255,255,255,0) 100%);
     left: 0;
     top: 0;
+}
+.actions{
+    position: relative;
+}
+#idioma{
+    padding: 6px 8px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    border:1px solid white;
+    text-indent: 20px;
+    width: 140px;
+    float: left;
+    margin-right: 35px;
+}
+.IdIcon{
+    left:8px;
+    top: 9px;
+    position: absolute;
+}
+.fundo-idioma{
+    background: black;
 }
